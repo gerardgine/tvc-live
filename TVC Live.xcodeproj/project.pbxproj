@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		201DA3671E51713B00C96EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DA3661E51713B00C96EFA /* AppDelegate.swift */; };
+		201DA3691E51713B00C96EFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DA3681E51713B00C96EFA /* ViewController.swift */; };
+		201DA36C1E51713B00C96EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201DA36A1E51713B00C96EFA /* Main.storyboard */; };
+		201DA36E1E51713B00C96EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201DA36D1E51713B00C96EFA /* Assets.xcassets */; };
+		201DA3791E51713B00C96EFA /* TVC_LiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DA3781E51713B00C96EFA /* TVC_LiveTests.swift */; };
+		201DA3841E51713B00C96EFA /* TVC_LiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DA3831E51713B00C96EFA /* TVC_LiveUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		201DA3751E51713B00C96EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201DA35B1E51713B00C96EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201DA3621E51713B00C96EFA;
+			remoteInfo = "TVC Live";
+		};
+		201DA3801E51713B00C96EFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201DA35B1E51713B00C96EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201DA3621E51713B00C96EFA;
+			remoteInfo = "TVC Live";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		201DA3631E51713B00C96EFA /* TVC Live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TVC Live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		201DA3661E51713B00C96EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		201DA3681E51713B00C96EFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		201DA36B1E51713B00C96EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		201DA36D1E51713B00C96EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		201DA36F1E51713B00C96EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201DA3741E51713B00C96EFA /* TVC LiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TVC LiveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		201DA3781E51713B00C96EFA /* TVC_LiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_LiveTests.swift; sourceTree = "<group>"; };
+		201DA37A1E51713B00C96EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201DA37F1E51713B00C96EFA /* TVC LiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TVC LiveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		201DA3831E51713B00C96EFA /* TVC_LiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC_LiveUITests.swift; sourceTree = "<group>"; };
+		201DA3851E51713B00C96EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		201DA3601E51713B00C96EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201DA3711E51713B00C96EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201DA37C1E51713B00C96EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201DA35A1E51713B00C96EFA = {
+			isa = PBXGroup;
+			children = (
+				201DA3651E51713B00C96EFA /* TVC Live */,
+				201DA3771E51713B00C96EFA /* TVC LiveTests */,
+				201DA3821E51713B00C96EFA /* TVC LiveUITests */,
+				201DA3641E51713B00C96EFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		201DA3641E51713B00C96EFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				201DA3631E51713B00C96EFA /* TVC Live.app */,
+				201DA3741E51713B00C96EFA /* TVC LiveTests.xctest */,
+				201DA37F1E51713B00C96EFA /* TVC LiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		201DA3651E51713B00C96EFA /* TVC Live */ = {
+			isa = PBXGroup;
+			children = (
+				201DA3661E51713B00C96EFA /* AppDelegate.swift */,
+				201DA3681E51713B00C96EFA /* ViewController.swift */,
+				201DA36A1E51713B00C96EFA /* Main.storyboard */,
+				201DA36D1E51713B00C96EFA /* Assets.xcassets */,
+				201DA36F1E51713B00C96EFA /* Info.plist */,
+			);
+			path = "TVC Live";
+			sourceTree = "<group>";
+		};
+		201DA3771E51713B00C96EFA /* TVC LiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				201DA3781E51713B00C96EFA /* TVC_LiveTests.swift */,
+				201DA37A1E51713B00C96EFA /* Info.plist */,
+			);
+			path = "TVC LiveTests";
+			sourceTree = "<group>";
+		};
+		201DA3821E51713B00C96EFA /* TVC LiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				201DA3831E51713B00C96EFA /* TVC_LiveUITests.swift */,
+				201DA3851E51713B00C96EFA /* Info.plist */,
+			);
+			path = "TVC LiveUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		201DA3621E51713B00C96EFA /* TVC Live */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201DA3881E51713B00C96EFA /* Build configuration list for PBXNativeTarget "TVC Live" */;
+			buildPhases = (
+				201DA35F1E51713B00C96EFA /* Sources */,
+				201DA3601E51713B00C96EFA /* Frameworks */,
+				201DA3611E51713B00C96EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TVC Live";
+			productName = "TVC Live";
+			productReference = 201DA3631E51713B00C96EFA /* TVC Live.app */;
+			productType = "com.apple.product-type.application";
+		};
+		201DA3731E51713B00C96EFA /* TVC LiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201DA38B1E51713B00C96EFA /* Build configuration list for PBXNativeTarget "TVC LiveTests" */;
+			buildPhases = (
+				201DA3701E51713B00C96EFA /* Sources */,
+				201DA3711E51713B00C96EFA /* Frameworks */,
+				201DA3721E51713B00C96EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201DA3761E51713B00C96EFA /* PBXTargetDependency */,
+			);
+			name = "TVC LiveTests";
+			productName = "TVC LiveTests";
+			productReference = 201DA3741E51713B00C96EFA /* TVC LiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		201DA37E1E51713B00C96EFA /* TVC LiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201DA38E1E51713B00C96EFA /* Build configuration list for PBXNativeTarget "TVC LiveUITests" */;
+			buildPhases = (
+				201DA37B1E51713B00C96EFA /* Sources */,
+				201DA37C1E51713B00C96EFA /* Frameworks */,
+				201DA37D1E51713B00C96EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201DA3811E51713B00C96EFA /* PBXTargetDependency */,
+			);
+			name = "TVC LiveUITests";
+			productName = "TVC LiveUITests";
+			productReference = 201DA37F1E51713B00C96EFA /* TVC LiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		201DA35B1E51713B00C96EFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kreative Offensive";
+				TargetAttributes = {
+					201DA3621E51713B00C96EFA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TPK3MQ2GED;
+						ProvisioningStyle = Automatic;
+					};
+					201DA3731E51713B00C96EFA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TPK3MQ2GED;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 201DA3621E51713B00C96EFA;
+					};
+					201DA37E1E51713B00C96EFA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TPK3MQ2GED;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 201DA3621E51713B00C96EFA;
+					};
+				};
+			};
+			buildConfigurationList = 201DA35E1E51713B00C96EFA /* Build configuration list for PBXProject "TVC Live" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 201DA35A1E51713B00C96EFA;
+			productRefGroup = 201DA3641E51713B00C96EFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				201DA3621E51713B00C96EFA /* TVC Live */,
+				201DA3731E51713B00C96EFA /* TVC LiveTests */,
+				201DA37E1E51713B00C96EFA /* TVC LiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		201DA3611E51713B00C96EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201DA36E1E51713B00C96EFA /* Assets.xcassets in Resources */,
+				201DA36C1E51713B00C96EFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201DA3721E51713B00C96EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201DA37D1E51713B00C96EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		201DA35F1E51713B00C96EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201DA3691E51713B00C96EFA /* ViewController.swift in Sources */,
+				201DA3671E51713B00C96EFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201DA3701E51713B00C96EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201DA3791E51713B00C96EFA /* TVC_LiveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201DA37B1E51713B00C96EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201DA3841E51713B00C96EFA /* TVC_LiveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		201DA3761E51713B00C96EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 201DA3621E51713B00C96EFA /* TVC Live */;
+			targetProxy = 201DA3751E51713B00C96EFA /* PBXContainerItemProxy */;
+		};
+		201DA3811E51713B00C96EFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 201DA3621E51713B00C96EFA /* TVC Live */;
+			targetProxy = 201DA3801E51713B00C96EFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		201DA36A1E51713B00C96EFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				201DA36B1E51713B00C96EFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		201DA3861E51713B00C96EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		201DA3871E51713B00C96EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		201DA3891E51713B00C96EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = TPK3MQ2GED;
+				INFOPLIST_FILE = "TVC Live/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreative-offensive.TVC-Live";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		201DA38A1E51713B00C96EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = TPK3MQ2GED;
+				INFOPLIST_FILE = "TVC Live/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreative-offensive.TVC-Live";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		201DA38C1E51713B00C96EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TPK3MQ2GED;
+				INFOPLIST_FILE = "TVC LiveTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreative-offensive.TVC-LiveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVC Live.app/TVC Live";
+			};
+			name = Debug;
+		};
+		201DA38D1E51713B00C96EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TPK3MQ2GED;
+				INFOPLIST_FILE = "TVC LiveTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreative-offensive.TVC-LiveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVC Live.app/TVC Live";
+			};
+			name = Release;
+		};
+		201DA38F1E51713B00C96EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = TPK3MQ2GED;
+				INFOPLIST_FILE = "TVC LiveUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreative-offensive.TVC-LiveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "TVC Live";
+			};
+			name = Debug;
+		};
+		201DA3901E51713B00C96EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = TPK3MQ2GED;
+				INFOPLIST_FILE = "TVC LiveUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kreative-offensive.TVC-LiveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "TVC Live";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		201DA35E1E51713B00C96EFA /* Build configuration list for PBXProject "TVC Live" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201DA3861E51713B00C96EFA /* Debug */,
+				201DA3871E51713B00C96EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201DA3881E51713B00C96EFA /* Build configuration list for PBXNativeTarget "TVC Live" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201DA3891E51713B00C96EFA /* Debug */,
+				201DA38A1E51713B00C96EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		201DA38B1E51713B00C96EFA /* Build configuration list for PBXNativeTarget "TVC LiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201DA38C1E51713B00C96EFA /* Debug */,
+				201DA38D1E51713B00C96EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		201DA38E1E51713B00C96EFA /* Build configuration list for PBXNativeTarget "TVC LiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201DA38F1E51713B00C96EFA /* Debug */,
+				201DA3901E51713B00C96EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 201DA35B1E51713B00C96EFA /* Project object */;
+}
