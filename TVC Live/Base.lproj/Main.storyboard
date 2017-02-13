@@ -21,12 +21,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsH-ZM-WBj">
-                                <rect key="frame" x="830" y="497" width="260" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsH-ZM-WBj" userLabel="3/24">
+                                <rect key="frame" x="880" y="497" width="161" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Play Video"/>
+                                <state key="normal" title="3/24"/>
                                 <connections>
                                     <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="fp2-fE-dqT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-mQ-YyE">
+                                <rect key="frame" x="884" y="387" width="152" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="TV3"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="TSb-6K-KKI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY9-8L-2iA">
+                                <rect key="frame" x="897" y="607" width="127" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="33"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ZNF-7O-iFt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -34,6 +50,10 @@
                         <constraints>
                             <constraint firstItem="MsH-ZM-WBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XnR-2k-PyQ"/>
                             <constraint firstItem="MsH-ZM-WBj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fHO-yv-zAP"/>
+                            <constraint firstItem="MY9-8L-2iA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kR8-8Z-1lq"/>
+                            <constraint firstItem="MsH-ZM-WBj" firstAttribute="top" secondItem="AF0-mQ-YyE" secondAttribute="bottom" constant="24" id="ntP-g3-tUT"/>
+                            <constraint firstItem="AF0-mQ-YyE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sW1-ig-bpf"/>
+                            <constraint firstItem="MY9-8L-2iA" firstAttribute="top" secondItem="MsH-ZM-WBj" secondAttribute="bottom" constant="24" id="xii-EM-Kui"/>
                         </constraints>
                     </view>
                 </viewController>
