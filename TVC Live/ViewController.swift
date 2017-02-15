@@ -13,17 +13,24 @@ import AVFoundation
 class ViewController: UIViewController {
 
     @IBAction func playVideo(_ sender: UIButton) {
-        let urls : [String:URL] = [
+        let international_urls : [String:URL] = [
             "3/24": URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:324_web/playlist.m3u8")!,
             "TV3": URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:tv3_web/playlist.m3u8")!,
             "33": URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:c33_web/playlist.m3u8")!
         ]
         
+//        let spanish_urls : [String:URL] = [
+//            "3/24": URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:324_web/playlist.m3u8")!,
+//            "TV3": URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:tv3_web/playlist.m3u8")!,
+//            "33": URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:c33_web/playlist.m3u8")!,
+//            "Esport3": URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:es3_web/playlist.m3u8")!
+//        ]
+        
         guard let title = sender.currentTitle else {
             return
         }
         
-        guard let url = urls[title] else {
+        guard let url = international_urls[title] else {
             return
         }
 
