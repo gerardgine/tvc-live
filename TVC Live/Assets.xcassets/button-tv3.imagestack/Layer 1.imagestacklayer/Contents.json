@@ -1,0 +1,16 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "frame-size" : {
+      "width" : 124,
+      "height" : 144
+    },
+    "frame-center" : {
+      "x" : 138,
+      "y" : 120
+    }
+  }
+}

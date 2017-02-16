@@ -21,26 +21,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsH-ZM-WBj" userLabel="3/24">
-                                <rect key="frame" x="880" y="497" width="161" height="86"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsH-ZM-WBj" userLabel="3/24">
+                                <rect key="frame" x="760" y="420" width="400" height="240"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="3/24"/>
+                                <state key="normal" backgroundImage="button-324"/>
                                 <connections>
                                     <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="fp2-fE-dqT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-mQ-YyE">
-                                <rect key="frame" x="668" y="497" width="152" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-mQ-YyE" userLabel="TV3">
+                                <rect key="frame" x="300" y="420" width="400" height="240"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="TV3"/>
+                                <state key="normal" backgroundImage="button-tv3"/>
                                 <connections>
                                     <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="TSb-6K-KKI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY9-8L-2iA">
-                                <rect key="frame" x="1101" y="497" width="127" height="86"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY9-8L-2iA" userLabel="33">
+                                <rect key="frame" x="1220" y="420" width="400" height="240"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="33"/>
+                                <state key="normal" backgroundImage="button-33"/>
                                 <connections>
                                     <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ZNF-7O-iFt"/>
                                 </connections>
@@ -61,4 +61,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="button-324" width="400" height="240"/>
+        <image name="button-33" width="400" height="240"/>
+        <image name="button-tv3" width="400" height="240"/>
+    </resources>
 </document>
