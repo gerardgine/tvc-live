@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-mQ-YyE">
-                                <rect key="frame" x="884" y="387" width="152" height="86"/>
+                                <rect key="frame" x="668" y="497" width="152" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="TV3"/>
                                 <connections>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY9-8L-2iA">
-                                <rect key="frame" x="897" y="607" width="127" height="86"/>
+                                <rect key="frame" x="1101" y="497" width="127" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="33"/>
                                 <connections>
@@ -48,12 +48,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="MY9-8L-2iA" firstAttribute="leading" secondItem="MsH-ZM-WBj" secondAttribute="trailing" constant="60" id="DO9-4Q-9Gb"/>
                             <constraint firstItem="MsH-ZM-WBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XnR-2k-PyQ"/>
+                            <constraint firstItem="MY9-8L-2iA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zlk-6i-efN"/>
+                            <constraint firstItem="MsH-ZM-WBj" firstAttribute="leading" secondItem="AF0-mQ-YyE" secondAttribute="trailing" constant="60" id="aKG-Uc-3kW"/>
                             <constraint firstItem="MsH-ZM-WBj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fHO-yv-zAP"/>
-                            <constraint firstItem="MY9-8L-2iA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kR8-8Z-1lq"/>
-                            <constraint firstItem="MsH-ZM-WBj" firstAttribute="top" secondItem="AF0-mQ-YyE" secondAttribute="bottom" constant="24" id="ntP-g3-tUT"/>
-                            <constraint firstItem="AF0-mQ-YyE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sW1-ig-bpf"/>
-                            <constraint firstItem="MY9-8L-2iA" firstAttribute="top" secondItem="MsH-ZM-WBj" secondAttribute="bottom" constant="24" id="xii-EM-Kui"/>
+                            <constraint firstItem="AF0-mQ-YyE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wsq-9b-Noy"/>
                         </constraints>
                     </view>
                 </viewController>
