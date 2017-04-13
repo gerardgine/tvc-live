@@ -10,36 +10,45 @@ import UIKit
 import AVKit
 import AVFoundation
 
+enum Channel: Int {
+    case TV3 = 1, C324, C33, Esport3
+}
+
+enum Region: Int {
+    case International = 0, Spain
+}
+
 class ViewController: UIViewController {
+    
+    let currentRegion = Region.Spain
+    let urls : [Region : [Channel : URL]] = [
+        .International: [
+            .TV3: URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:tv3_web/playlist.m3u8")!,
+            .C324: URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:324_web/playlist.m3u8")!,
+            .C33: URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:c33_web/playlist.m3u8")!
+        ],
+        .Spain: [
+            .TV3: URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:tv3_web/playlist.m3u8")!,
+            .C324: URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:324_web/playlist.m3u8")!,
+            .C33: URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:c33_web/playlist.m3u8")!,
+            .Esport3: URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:es3_web/playlist.m3u8")!
+        ]
+    ]
 
     @IBAction func playVideo(_ sender: UIButton) {
-        let international_urls : [URL] = [
-            URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:tv3_web/playlist.m3u8")!,
-            URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:324_web/playlist.m3u8")!,
-            URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:c33_web/playlist.m3u8")!
-        ]
         
-//        let international_urls : [String:URL] = [
-//            "3/24": URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:324_web/playlist.m3u8")!,
-//            "TV3": URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:tv3_web/playlist.m3u8")!,
-//            "33": URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:c33_web/playlist.m3u8")!
-//        ]
+        let tag = sender.tag
         
-//        let spanish_urls : [String:URL] = [
-//            "3/24": URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:324_web/playlist.m3u8")!,
-//            "TV3": URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:tv3_web/playlist.m3u8")!,
-//            "33": URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:c33_web/playlist.m3u8")!,
-//            "Esport3": URL(string: "http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:es3_web/playlist.m3u8")!
-//        ]
-
-        let title = sender.tag
+        guard let channel = Channel(rawValue: tag) else {
+            print("No Channel found with rawValue \(tag)")
+            return
+        }
         
-//        guard let url = international_urls[title] else {
-//            return
-//        }
+        guard let url = urls[currentRegion]?[channel] else {
+            print("No URL found for Region \(currentRegion) and Channel \(channel)")
+            return
+        }
         
-        let url = international_urls[title]
-
         // Create an AVPlayer, passing it the HTTP Live Streaming URL.
         let player = AVPlayer(url: url)
         
