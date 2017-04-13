@@ -20,7 +20,7 @@ enum Region: Int {
 
 class ViewController: UIViewController {
     
-    let currentRegion = Region.Spain
+    let currentRegion = Region.International
     let urls : [Region : [Channel : URL]] = [
         .International: [
             .TV3: URL(string: "http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:tv3_web/playlist.m3u8")!,
