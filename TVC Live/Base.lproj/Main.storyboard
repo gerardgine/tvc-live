@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="tvOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,39 +22,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsH-ZM-WBj" userLabel="3/24">
-                                <rect key="frame" x="760" y="420" width="400" height="240"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" backgroundImage="button-324"/>
-                                <connections>
-                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="fp2-fE-dqT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-mQ-YyE" userLabel="TV3">
-                                <rect key="frame" x="300" y="420" width="400" height="240"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" backgroundImage="button-tv3"/>
-                                <connections>
-                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="TSb-6K-KKI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY9-8L-2iA" userLabel="33">
-                                <rect key="frame" x="1220" y="420" width="400" height="240"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" backgroundImage="button-33"/>
-                                <connections>
-                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ZNF-7O-iFt"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="weT-gn-dYU">
+                                <rect key="frame" x="300" y="420" width="1320" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-mQ-YyE" userLabel="TV3">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="240"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" backgroundImage="button-tv3"/>
+                                        <connections>
+                                            <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="TSb-6K-KKI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsH-ZM-WBj" userLabel="3/24">
+                                        <rect key="frame" x="460" y="0.0" width="400" height="240"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" backgroundImage="button-324"/>
+                                        <connections>
+                                            <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="fp2-fE-dqT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY9-8L-2iA" userLabel="33">
+                                        <rect key="frame" x="920" y="0.0" width="400" height="240"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" backgroundImage="button-33"/>
+                                        <connections>
+                                            <action selector="playVideo:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ZNF-7O-iFt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MsH-ZM-WBj" firstAttribute="firstBaseline" secondItem="MY9-8L-2iA" secondAttribute="firstBaseline" id="32F-ES-LYX"/>
+                                    <constraint firstItem="MsH-ZM-WBj" firstAttribute="baseline" secondItem="AF0-mQ-YyE" secondAttribute="baseline" id="QqK-IG-nZa"/>
+                                    <constraint firstItem="MY9-8L-2iA" firstAttribute="baseline" secondItem="AF0-mQ-YyE" secondAttribute="baseline" id="Yjv-Ao-11x"/>
+                                    <constraint firstItem="MsH-ZM-WBj" firstAttribute="baseline" secondItem="MY9-8L-2iA" secondAttribute="baseline" id="aHN-OM-VJD"/>
+                                    <constraint firstItem="MY9-8L-2iA" firstAttribute="firstBaseline" secondItem="AF0-mQ-YyE" secondAttribute="firstBaseline" id="ln7-fy-rGg"/>
+                                    <constraint firstItem="MsH-ZM-WBj" firstAttribute="firstBaseline" secondItem="AF0-mQ-YyE" secondAttribute="firstBaseline" id="yaz-V1-jzk"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="MY9-8L-2iA" firstAttribute="leading" secondItem="MsH-ZM-WBj" secondAttribute="trailing" constant="60" id="DO9-4Q-9Gb"/>
-                            <constraint firstItem="MsH-ZM-WBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XnR-2k-PyQ"/>
-                            <constraint firstItem="MY9-8L-2iA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zlk-6i-efN"/>
-                            <constraint firstItem="MsH-ZM-WBj" firstAttribute="leading" secondItem="AF0-mQ-YyE" secondAttribute="trailing" constant="60" id="aKG-Uc-3kW"/>
-                            <constraint firstItem="MsH-ZM-WBj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fHO-yv-zAP"/>
-                            <constraint firstItem="AF0-mQ-YyE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wsq-9b-Noy"/>
+                            <constraint firstItem="weT-gn-dYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AbL-md-1v6"/>
+                            <constraint firstItem="weT-gn-dYU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l84-Js-3fa"/>
                         </constraints>
                     </view>
                 </viewController>
